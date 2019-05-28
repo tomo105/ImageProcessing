@@ -1,6 +1,4 @@
-
 import java.awt.image.BufferedImage;
-
 import static java.lang.Math.*;
 
 public class ClosingDiskElement {
@@ -50,28 +48,7 @@ public class ClosingDiskElement {
 
         width = image.getWidth();
         height = image.getHeight();
-
-
-//        for (int i = 0; i < height; i++) {
-//            for (int j = 0; j < width; j++) {
-//                if (image.getRGB(j, i) == Color.WHITE.getRGB())
-//                    newImage[j][i] = 1;    //obiekt
-//                else
-//                    newImage[j][i] = 0;   //tło
-//            }
-//        }
         BufferedImage convertedImage = dilatation(image);
-
-//
-//        for (int i = 0; i < height; i++) {
-//            for (int j = 0; j < width; j++) {
-//                if (newImage[j][i] == 1) {
-//                    image.setRGB(j, i, Color.WHITE.getRGB());
-//                } else {
-//                    image.setRGB(j, i, Color.BLACK.getRGB());
-//                }
-//            }
-//        }
 
         return erosion(convertedImage);
     }

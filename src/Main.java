@@ -21,7 +21,7 @@ public class Main {
         }
 
         Scanner sc = new Scanner(System.in);
-        System.out.println(" Choose one of the option:");
+        System.out.println(" Choose one of the options:");
         System.out.println("1-->closingDiskElement");
         System.out.println("2-->geoDistance");
         System.out.println("3-->KirschFilter");
@@ -63,7 +63,7 @@ public class Main {
         }
     }
 //TUTAJ WPISUJE SCIEZKE DO ZAPISU !!!!!!!!!!!!!!!!!!!!!!!!!
-    public static void save(BufferedImage image) {
+     private static void save(BufferedImage image) {
         try {
             File file = new File("C:\\Users\\Tomek\\IdeaProjects\\ImageProcessing1\\result\\res_kirsch_manalisa.jpg");
             ImageIO.write(image, "jpg", file);
